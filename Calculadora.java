@@ -582,29 +582,35 @@ public class Calculadora extends javax.swing.JFrame {
     private void btn_IgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_IgualActionPerformed
         consola.setNum1(this.num1);
         switch(this.ope){
-            case "+": this.txtOperacion.setText(Float.toString(consola.sumar()));
+            case "+": 
                 this.num2=Float.parseFloat(this.txtOperacion.getText());
                 consola.setNum2(this.num2);
+                this.txtOperacion.setText(Float.toString(consola.sumar()));
                 break;
-            case "-": this.txtOperacion.setText(Float.toString(consola.restar()));
+            case "-": 
                 this.num2=Float.parseFloat(this.txtOperacion.getText());
                 consola.setNum2(this.num2);
+                this.txtOperacion.setText(Float.toString(consola.restar()));
                 break;
-            case "*": this.txtOperacion.setText(Float.toString(consola.multiplicar()));
+            case "*": 
                 this.num2=Float.parseFloat(this.txtOperacion.getText());
                 consola.setNum2(this.num2);
+                this.txtOperacion.setText(Float.toString(consola.multiplicar()));
                 break;
-            case "/": this.txtOperacion.setText(Float.toString(consola.dividir()));
+            case "/": 
                 this.num2=Float.parseFloat(this.txtOperacion.getText());
                 consola.setNum2(this.num2);
+                this.txtOperacion.setText(Float.toString(consola.dividir()));
                 break;
-            case "^": this.txtOperacion.setText(Float.toString(consola.potencia()));
+            case "^": 
                 this.num2=Float.parseFloat(this.txtOperacion.getText());
                 consola.setNum2(this.num2);
+                this.txtOperacion.setText(Float.toString(consola.potencia()));
                 break;
-            case "raiz": this.txtOperacion.setText(Float.toString(consola.raiz()));
+            case "raiz": 
                 this.num2=Float.parseFloat(this.txtOperacion.getText());
                 consola.setNum2(this.num2);
+                this.txtOperacion.setText(Float.toString(consola.raiz()));
                 break;
             case "seno": this.txtOperacion.setText(Float.toString(consola.seno()));
                 break;
@@ -612,9 +618,10 @@ public class Calculadora extends javax.swing.JFrame {
                 break;
             case "tangente": this.txtOperacion.setText(Float.toString(consola.tangente()));
                 break;
-            case "iva": this.txtOperacion.setText(Float.toString(consola.iva()));
+            case "iva": 
                 this.num2=Float.parseFloat(this.txtOperacion.getText());
                 consola.setNum2(this.num2);
+                this.txtOperacion.setText(Float.toString(consola.iva()));
                 break;
     }
     }//GEN-LAST:event_btn_IgualActionPerformed
